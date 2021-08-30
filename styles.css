@@ -7,7 +7,7 @@
     padding: 5px;
     background-color: white;
 }
-
+/*Styling for all museum logos*/
 #logo-BAND, #logo-SMH, #logo-MAAA {
     width: 100px;
     height: auto;
@@ -15,6 +15,7 @@
     margin-left: 7px;
 }
 
+/*Styling for the navbar, including the nav itself, the list items, and the links*/
 nav {
     font-family: Sora;
     float: right;
@@ -28,16 +29,16 @@ nav li {
     margin: 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
-a:link {
+nav a:link {
     color:black;
 }
 
-a:visited {
+nav a:visited {
     color: #63425f;
 }
 
@@ -49,10 +50,12 @@ body {
     color: black;
 }
 
+/*Introduction section, including the title of the event + a short description*/
 #intro {
     margin-bottom: 20px;
 }
 
+/*Section one, which includes small exhibit snippets and a background image taken from the civil rights movement*/
 #sect1 {
     background: url('images/I-Am-a-ManPhoto.jpg');
     width: 100%;
@@ -61,6 +64,7 @@ body {
     justify-content: center;
 }
 
+/*Styling for the exhibit title*/
 .title {
     width: 50%;
     margin: auto;
@@ -69,6 +73,7 @@ body {
     text-align: center;
 }
 
+/*Styling for the exhibit description*/
 .description {
     width: 60%;
     margin: auto;
@@ -77,6 +82,7 @@ body {
 
 }
 
+/*Styling for the exhibit snippets in Section One*/
 .box {
     width: 300px;
     height: auto;
