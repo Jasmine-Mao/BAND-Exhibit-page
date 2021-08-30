@@ -1,0 +1,60 @@
+/*HEADER*/
+
+#header {
+    width: 100%;
+    height: 20%;
+    margin: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+#logo-BAND, #logo-SMH, #logo-MAAA {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-left: 7px;
+}
+
+nav {
+    font-family: Inter;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color: #63425f;
+}
+
+/*BODY*/
+body {
+
+    background-color: white;
+    font-family: Inter;
+    color: black;
+}
+
+main {
+    /*margin-top: 7%;*/
+}
+
+.title {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}
