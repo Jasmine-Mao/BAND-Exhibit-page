@@ -28,17 +28,21 @@ nav li {
     margin: 10px;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: black;
 }
 
-nav a:link {
+a:link {
     color:black;
 }
 
-nav a:visited {
+a:visited {
     color: #63425f;
+}
+
+a:hover {
+    color:red
 }
 
 /*BODY*/
@@ -96,25 +100,37 @@ body {
 /*Styling for the exhibit snippet in section two*/
 #sect2 {
     width: 100%;
-    height: 400px;
-    padding: 50px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
     background-color: black;
     color: white;
     font-family: Sora;
+    display: flex;
+    justify-content:left;
 }
 
 /*Styling for the image in section two.*/
 #sect2 img {
     border-radius: 50%;
+    width: 80%;
+    margin: 30px;
     display: block;
-    max-width: 100%;
-    max-height: auto;
 }
 
 #musicDescription {
     width: 60%;
     float: right;
     vertical-align: center;
+    margin: auto;
+}
+
+#musicDescription a:hover {
+    color:red;
+}
+
+#musicDescription a {
+    color: lavender;
 }
 
 .responsive {
