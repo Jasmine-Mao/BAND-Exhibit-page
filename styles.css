@@ -3,8 +3,7 @@
 #header {
     width: 100%;
     height: 20%;
-    margin: 20px;
-    padding: 5px;
+    margin: 30px;
     background-color: white;
 }
 /*Styling for all museum logos*/
@@ -58,6 +57,7 @@ body {
 /*Section one, which includes small exhibit snippets and a background image taken from the civil rights movement*/
 #sect1 {
     background: url('images/I-Am-a-ManPhoto.jpg');
+    background-size: auto;
     width: 100%;
     height: 45%;
     display: flex;
@@ -74,22 +74,50 @@ body {
 }
 
 /*Styling for the exhibit description*/
-.description {
+.illustrateDescription {
     width: 60%;
     margin: auto;
     font-size: 20px;
     text-align: center;
-
 }
 
 /*Styling for the exhibit snippets in Section One*/
 .box {
-    width: 300px;
+    width: 30%;
     height: auto;
-    margin: 15px;
+    margin: 120px 20px;
     padding: 10px;
     background-color: white;
     color: black;
     font-family: Sora;
     text-align: left;
 }
+
+/*Styling for the exhibit snippet in section two*/
+#sect2 {
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-family: Sora;
+}
+
+/*Styling for the image in section two.*/
+#sect2 img {
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#musicDescription {
+    width: 60%;
+    float: right;
+    vertical-align: center;
+}
+
+.responsive {
+    width: 30%;
+    height: auto;
+  }
