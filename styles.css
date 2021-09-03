@@ -20,7 +20,7 @@ nav {
     float: right;
     font-size: 20px;
     text-align: center;
-    width: 40%;
+    margin-right: 20px;
 }
 
 nav li {
@@ -56,6 +56,8 @@ body {
 /*Introduction section, including the title of the event + a short description*/
 #intro {
     margin-bottom: 20px;
+    box-sizing: border-box;
+
 }
 
 /*Section one, which includes small exhibit snippets and a background image taken from the civil rights movement*/
@@ -66,6 +68,7 @@ body {
     height: 45%;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 /*Styling for the exhibit title*/
@@ -75,6 +78,8 @@ body {
     padding-top: 150px;
     font-size: 60px;
     text-align: center;
+    box-sizing: border-box;
+
 }
 
 /*Styling for the exhibit description*/
@@ -83,6 +88,7 @@ body {
     margin: auto;
     font-size: 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /*Styling for the exhibit snippets in Section One*/
@@ -99,10 +105,7 @@ body {
 
 /*Styling for the exhibit snippet in section two*/
 #sect2 {
-    width: 100%;
-    height: auto;
     padding: 30px;
-    box-sizing: border-box;
     background-color: black;
     color: white;
     font-family: Sora;
@@ -114,12 +117,12 @@ body {
 #sect2 img {
     border-radius: 50%;
     width: 80%;
-    margin: 30px;
+    margin: 15px;
     display: block;
 }
 
-#musicDescription {
-    width: 60%;
+.description {
+    width: 50%;
     float: right;
     vertical-align: center;
     margin: auto;
@@ -137,3 +140,19 @@ body {
     width: 30%;
     height: auto;
   }
+
+#sect3 {
+    background-color: white;
+    padding: 30px;
+    color: black;
+    font-family: Sora;
+    display: flex;
+    justify-content: right;
+}
+
+#sect3 img {
+    border-radius: 50%;
+    width: 90%;
+    display: block;
+    padding: 15px;
+}
