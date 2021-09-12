@@ -12,7 +12,7 @@
 
     <body>
         <!--Main header. Appears on every page. Has logos to each museum + nav links to other pages-->
-        <header id="header">
+        <header>
             <div>
                 <!--BAND logo, wrapped in an "a" element so the user can click the logo to be taken to their site-->
                 <a href="https://www.bandgallery.com/" target="_blank">
@@ -28,17 +28,54 @@
                 <a href="https://www.maaala.org/" target="_blank">
                     <img id="logo-MAAA" src="images/MAAA.jfif">
                 </a>
-
-                <!--Navigation section, allows users to visit other pages-->
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="exhibits.html">Current Exhibits</a></li>
-                    </ul>
-                </nav>
             </div>
+
+            <!--Navigation section, allows users to visit other pages-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" style="text-decoration: underline;">About</a></li>
+                    <li><a href="exhibits.html">Current Exhibits</a></li>
+                </ul>
+            </nav>
         </header>
+
+        <main>
+            <div class="text_container">
+                <img src="images/BAND.png" style="width:50%; display:block; margin:0 auto; cursor: pointer">
+                <div id="show_div_slowly">
+                    <div id="aboutImage">
+                        <div class="about">
+                            <p>Some interesting content here. This is really just to test the width of the about class to see if it interferes with the background image. Which is a little annoying since i was really hoping i could set the initial height of the image but eh this is about as good as it gets i suppose</p>
+                            <!--ADD MORE PADDING TO THE TOP AND BOTTOM TO MAKE THE IMAGE APPEAR LONGER-->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <!--JavaScript that allows the about section to slide in/out when the museum logo is pressed-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.text_container').addClass("hidden");
+        
+                $('.text_container').click(function() {
+                    var $this = $(this);
+        
+                    if ($this.hasClass("hidden")) {
+                        $("#show_div_slowly").slideDown('slow')
+                        $(this).removeClass("hidden").addClass("visible");
+        
+                    } else {
+                        $("#show_div_slowly").slideUp('slow')
+                        $(this).removeClass("visible").addClass("hidden");
+                    }
+                });
+            });
+        </script>
     </body>
 
 
