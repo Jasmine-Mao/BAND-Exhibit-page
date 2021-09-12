@@ -1,49 +1,51 @@
 /*HEADER*/
+    /*Same for all pages*/
+    header {
+        width: 100%;
+        height: 20%;
+        margin: 30px;
+        background-color: white;
+        padding-bottom: 150px;
+    }
+    /*Styling for all museum logos*/
+    #logo-BAND, #logo-SMH, #logo-MAAA {
+        width: 100px;
+        height: auto;
+        float: left;
+        margin-left: 7px;
+    }
 
-#header {
-    width: 100%;
-    height: 20%;
-    margin: 30px;
-    background-color: white;
-}
-/*Styling for all museum logos*/
-#logo-BAND, #logo-SMH, #logo-MAAA {
-    width: 100px;
-    height: auto;
-    float: left;
-    margin-left: 7px;
-}
+    /*Styling for the navbar, including the nav itself, the list items, and the links*/
+    nav {
+        font-family: Sora;
+        float: right;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
 
-/*Styling for the navbar, including the nav itself, the list items, and the links*/
-nav {
-    font-family: Sora;
-    float: right;
-    font-size: 20px;
-    text-align: center;
-    margin-right: 20px;
-}
+    nav li {
+        display: inline;
+        margin: 10px;
+    }
 
-nav li {
-    display: inline;
-    margin: 10px;
-}
+    /*Styling for all links. NOTE THAT ALL LINKS ON ALL PAGES WILL HAVE THIS STYLING UNLESS OTHERWISE STATED*/
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+    a:link {
+        color:black;
+    }
 
-a:link {
-    color:black;
-}
+    a:visited {
+        color: #63425f;
+    }
 
-a:visited {
-    color: #63425f;
-}
-
-a:hover {
-    color:red
-}
+    a:hover {
+        color:red
+    }
 
 /*BODY*/
 body {
@@ -53,106 +55,142 @@ body {
     color: black;
 }
 
-/*Introduction section, including the title of the event + a short description*/
-#intro {
-    margin-bottom: 20px;
-    box-sizing: border-box;
+/*INDEX.HTML STYLING*/
+    /*Introduction section, including the title of the event + a short description*/
+    #intro {
+        margin-bottom: 20px;
+        box-sizing: border-box;
 
-}
+    }
 
-/*Section one, which includes small exhibit snippets and a background image taken from the civil rights movement*/
-#sect1 {
-    background: url('images/I-Am-a-ManPhoto.jpg');
-    background-size: auto;
-    width: 100%;
-    height: 45%;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
+    /*Section one, which includes small exhibit snippets and a background image taken from the civil rights movement*/
+    #sect1 {
+        background: url('images/I-Am-a-ManPhoto.jpg');
+        background-size: auto;
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
 
-/*Styling for the exhibit title*/
-.title {
-    width: 50%;
-    margin: auto;
-    padding-top: 150px;
-    font-size: 60px;
-    text-align: center;
-    box-sizing: border-box;
+    /*Styling for the exhibit title*/
+    .title {
+        width: 50%;
+        margin: auto;
+        font-size: 60px;
+        text-align: center;
+        box-sizing: border-box;
 
-}
+    }
 
-/*Styling for the exhibit description*/
-.illustrateDescription {
-    width: 60%;
-    margin: auto;
-    font-size: 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
+    /*Styling for the exhibit description*/
+    .illustrateDescription {
+        width: 60%;
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
-/*Styling for the exhibit snippets in Section One*/
-.box {
-    width: 30%;
-    height: auto;
-    margin: 120px 20px;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    font-family: Sora;
-    text-align: left;
-}
+    /*Styling for the exhibit snippets in Section One*/
+    .box {
+        width: 30%;
+        height: auto;
+        margin: 120px 20px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-family: Sora;
+        text-align: left;
+    }
 
-/*Styling for the exhibit snippet in section two*/
-#sect2 {
-    padding: 30px;
-    background-color: black;
-    color: white;
-    font-family: Sora;
-    display: flex;
-    justify-content:left;
-}
+    /*Styling for the exhibit snippet in section two*/
+    #sect2 {
+        padding: 30px;
+        background-color: black;
+        color: white;
+        font-family: Sora;
+        display: flex;
+        justify-content:left;
+    }
 
-/*Styling for the image in section two.*/
-#sect2 img {
-    border-radius: 50%;
-    width: 80%;
-    margin: 15px;
-    display: block;
-}
+    /*Styling for the image in section two.*/
+    #sect2 img {
+        border-radius: 50%;
+        width: 80%;
+        margin: 15px;
+        display: block;
+    }
 
-.description {
-    width: 50%;
-    float: right;
-    vertical-align: center;
-    margin: auto;
-}
+    .description {
+        width: 50%;
+        vertical-align: center;
+        margin: auto;
+    }
 
-#musicDescription a:hover {
-    color:red;
-}
+    #musicDescription a:hover {
+        color:red;
+    }
 
-#musicDescription a {
-    color: lavender;
-}
+    #musicDescription a {
+        color: lavender;
+    }
 
-.responsive {
-    width: 30%;
-    height: auto;
-  }
+    .responsive {
+        width: 30%;
+        height: auto;
+    }
 
-#sect3 {
-    background-color: white;
-    padding: 30px;
-    color: black;
-    font-family: Sora;
-    display: flex;
-    justify-content: right;
-}
+    #sect3 {
+        background-color: white;
+        padding: 30px;
+        color: black;
+        font-family: Sora;
+        display: flex;
+    }
 
-#sect3 img {
-    border-radius: 50%;
-    width: 90%;
-    display: block;
-    padding: 15px;
-}
+    #sect3 img {
+        border-radius: 50%;
+        width: 90%;
+        display: block;
+        padding: 15px;
+    }
+
+/*ABOUT.HTML STYLING*/
+    #show_div_slowly {
+        background-color:black;
+        color:white;
+        font-family:Sora;
+    }
+
+    .hidden>div {
+        display: none;
+        background-color:black;
+        color:white;
+        font-family:Sora;
+    }
+
+    .visible>div {
+        display: flex;
+        background-color:black;
+        color:white;
+        font-family:Sora;
+    }
+
+    .about {
+        width: 60%;
+        padding:60px;
+
+        /*padding: 60px;
+        color: white;
+        vertical-align: center;
+        margin: auto;*/
+    }
+
+    #aboutImage {
+        background-image:url("images/EoKpsiSW4Ak9_ts.jpg");
+        background-size:contain;
+        background-position:right top;
+        background-repeat: no-repeat;
+    }
